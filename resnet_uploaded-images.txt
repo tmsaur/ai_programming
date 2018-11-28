@@ -1,0 +1,99 @@
+Hva her Namespace(arch='resnet', dir='uploaded_images/', dogfile='dognames.txt')
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = resnet 
+ dogfile = dognames.txt
+Pet image: Coffe_mug_01.jpg
+
+Filename= Coffe_mug_01.jpg    Label= coffe mug
+Pet image: Cat_01.jpg
+
+Filename= Cat_01.jpg    Label= cat
+Pet image: Dog_02.jpg
+
+Filename= Dog_02.jpg    Label= dog
+Pet image: Dog_01.jpg
+
+Filename= Dog_01.jpg    Label= dog
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:               Coffe_mug_01.jpg  label:                  coffe mug
+ 2 key:                     Cat_01.jpg  label:                        cat
+ 3 key:                     Dog_02.jpg  label:                        dog
+ 4 key:                     Dog_01.jpg  label:                        dog
+
+Printing all key-value pairs in dictionary results_dic:
+Filename= Coffe_mug_01.jpg    Pet Label= coffe mug
+Filename= Cat_01.jpg    Pet Label= cat
+Filename= Dog_02.jpg    Pet Label= dog
+Filename= Dog_01.jpg    Pet Label= dog
+Filnavnet: Coffe_mug_01.jpg
+Til lower: coffee mug
+Filnavnet: Cat_01.jpg
+Til lower: tabby, tabby cat, cat
+dic type: <class 'dict'>
+Filnavnet: Dog_02.jpg
+Til lower: ibizan hound, ibizan podenco
+Filnavnet: Dog_01.jpg
+Til lower: brittany spaniel
+
+     MATCH:
+
+                    Cat_01.jpg: 
+Real:                        cat   Classifier:          tabby, tabby cat, cat
+
+ NOT A MATCH:
+
+              Coffe_mug_01.jpg: 
+Real:                  coffe mug   Classifier:                     coffee mug
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:   ibizan hound, ibizan podenco
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:               brittany spaniel
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+     MATCH:
+
+                    Cat_01.jpg: 
+Real:                        cat   Classifier:          tabby, tabby cat, cat  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+              Coffe_mug_01.jpg: 
+Real:                  coffe mug   Classifier:                     coffee mug  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:   ibizan hound, ibizan podenco  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:               brittany spaniel  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog:   0.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+
+*** Results Summary for CNN Model Architecture RESNET ***
+N Images            :   4
+N Dog Images        :   2
+ 
+
+INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier:   ibizan hound, ibizan podenco
+Real:                        dog   Classifier:               brittany spaniel
+
+** Total Elapsed Runtime: 0:0:0

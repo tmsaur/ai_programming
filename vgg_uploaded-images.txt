@@ -1,0 +1,110 @@
+Hva her Namespace(arch='vgg', dir='uploaded_images/', dogfile='dognames.txt')
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+Pet image: Coffe_mug_01.jpg
+
+Filename= Coffe_mug_01.jpg    Label= coffe mug
+Pet image: Cat_01.jpg
+
+Filename= Cat_01.jpg    Label= cat
+Pet image: Dog_02.jpg
+
+Filename= Dog_02.jpg    Label= dog
+Pet image: Dog_01.jpg
+
+Filename= Dog_01.jpg    Label= dog
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:               Coffe_mug_01.jpg  label:                  coffe mug
+ 2 key:                     Cat_01.jpg  label:                        cat
+ 3 key:                     Dog_02.jpg  label:                        dog
+ 4 key:                     Dog_01.jpg  label:                        dog
+
+Printing all key-value pairs in dictionary results_dic:
+Filename= Coffe_mug_01.jpg    Pet Label= coffe mug
+Filename= Cat_01.jpg    Pet Label= cat
+Filename= Dog_02.jpg    Pet Label= dog
+Filename= Dog_01.jpg    Pet Label= dog
+Filnavnet: Coffe_mug_01.jpg
+Til lower: pitcher, ewer
+Filnavnet: Cat_01.jpg
+Til lower: tabby, tabby cat, cat
+dic type: <class 'dict'>
+Filnavnet: Dog_02.jpg
+Til lower: pembroke, pembroke welsh corgi, corgi
+Filnavnet: Dog_01.jpg
+Til lower: golden retriever
+
+     MATCH:
+
+                    Cat_01.jpg: 
+Real:                        cat   Classifier:          tabby, tabby cat, cat
+
+ NOT A MATCH:
+
+              Coffe_mug_01.jpg: 
+Real:                  coffe mug   Classifier:                  pitcher, ewer
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier: pembroke, pembroke welsh corgi, corgi
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:               golden retriever
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+     MATCH:
+
+                    Cat_01.jpg: 
+Real:                        cat   Classifier:          tabby, tabby cat, cat  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+              Coffe_mug_01.jpg: 
+Real:                  coffe mug   Classifier:                  pitcher, ewer  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier: pembroke, pembroke welsh corgi, corgi  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:               golden retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog:   0.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+
+*** Results Summary for CNN Model Architecture VGG ***
+N Images            :   4
+N Dog Images        :   2
+ 
+
+INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier: pembroke, pembroke welsh corgi, corgi
+Real:                        dog   Classifier:               golden retriever
+
+** Total Elapsed Runtime: 0:0:5
+
+1. Did the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed? If not, report the differences in the classifications.
+ 
+
+2. Did each of the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed of dog as that model architecture classified Dog_02.jpg? If not, report the differences in the classifications.
+ 
+
+3. Did the three model architectures correctly classify Animal_Name_01.jpg and Object_Name_01.jpg to not be dogs? If not, report the misclassifications.
+ 
+
+4. Based upon your answers for questions 1. - 3. above, select the model architecture that you feel did the best at classifying the four uploaded images. Describe why you selected that model architecture as the best on uploaded image classification.
